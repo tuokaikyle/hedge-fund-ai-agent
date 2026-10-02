@@ -1,0 +1,70 @@
+# Root .gitignore for the whole hedge-fund workspace. It covers all four
+# projects (ai-hedge-fund-main, ai-hedge-fund-cl, simple-hedge-fund and
+# simple-progressive). Each project also keeps its own .gitignore, which git
+# applies on top of this one.
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+downloads/
+eggs/
+.eggs/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+*.egg
+.installed.cfg
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments (uv / venv / poetry)
+.venv/
+venv/
+env/
+ENV/
+
+# Secrets and local config (keep the .example templates)
+.env
+.env.*
+!.env.example
+config.toml
+
+# Frontend (ai-hedge-fund-main/app)
+node_modules/
+
+# Generated output and local databases
+outputs/
+/scratchpad/
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+
+# IDE / editor
+.idea/
+.vscode/
+.cursor/
+.cursorrules
+.cursorignore
+.cursorindexingignore
+*.swp
+*.swo
+
+# Claude Code local settings
+.claude/settings.local.json

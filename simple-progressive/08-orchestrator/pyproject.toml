@@ -1,0 +1,21 @@
+[project]
+name = "simple-hedge-fund"
+version = "0.8.0"
+description = "Lesson 8: combining opinions with an orchestrator"
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic>=2.7",
+    "typer>=0.16.0",
+    "yfinance>=0.2.40",
+]
+
+# Installs a `simple-hedge-fund` command that calls app() in cli.py.
+[project.scripts]
+simple-hedge-fund = "simple_hedge_fund.cli:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/simple_hedge_fund"]
