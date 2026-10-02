@@ -68,3 +68,8 @@ outputs/
 
 # Claude Code local settings
 .claude/settings.local.json
+
+ai-hedge-fund-main/
+simple-hedge-fund/
+ai-hedge-fund-cl/
+simple-progressive/
