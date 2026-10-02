@@ -1,7 +1,8 @@
-# Root .gitignore for the whole hedge-fund workspace. It covers all four
+# Root .gitignore for the whole hedge-fund workspace. The four generated
 # projects (ai-hedge-fund-main, ai-hedge-fund-cl, simple-hedge-fund and
-# simple-progressive). Each project also keeps its own .gitignore, which git
-# applies on top of this one.
+# simple-progressive) are kept on disk but never tracked — see the bottom of
+# this file. Each project also keeps its own .gitignore, which git would
+# apply on top of this one if a project were ever force-added.
 
 # OS
 .DS_Store
@@ -69,7 +70,10 @@ outputs/
 # Claude Code local settings
 .claude/settings.local.json
 
-ai-hedge-fund-main/
-simple-hedge-fund/
-ai-hedge-fund-cl/
-simple-progressive/
+# The four generated projects: kept on disk, deliberately out of version
+# control. prompts.md is the spec; these are regenerable from it.
+# Anchored with a leading slash so only these top-level directories match.
+/ai-hedge-fund-main/
+/simple-hedge-fund/
+/ai-hedge-fund-cl/
+/simple-progressive/
