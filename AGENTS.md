@@ -1,0 +1,23 @@
+# Repository Guidelines
+
+This project is a mini course. Give learners a gentle path to understanding how
+a small agent system is built.
+
+Focus on the core logic. Keep it simple. It does not need to be production-ready
+or handle every error scenario. Keep test-like demonstrations out of lesson code.
+Run each lesson's documented command once, but do not test every edge case.
+
+Each lesson should contain the code it needs and run through the root `run.py`
+with the shared environment. Build on the previous lesson and copy forward
+working code. Keep unchanged files unchanged so adjacent lessons are easy to
+compare.
+
+Keep each lesson README concise: state the goal, show a "What's here" file tree,
+explain the new idea, give the run command and expected output, and link to the
+next lesson when it exists. In the tree, mark code files as new, changed, or
+unchanged from the previous lesson. In code, label a new or modified function
+or class only when that helps the learner spot the change; leave unchanged
+code unmarked.
+
+When several agents are introduced, keep a consistent input and output shape
+so their logic is easy to compare.
