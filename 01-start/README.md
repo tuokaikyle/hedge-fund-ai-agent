@@ -28,7 +28,7 @@ to show how to create one snapshot. Later code can use the same data shape.
 From the repository root:
 
 ```bash
-uv run python run.py --course 1 --ticker AAPL
+uv run python run.py --ticker AAPL --lesson 1
 ```
 
 This uses the root Python environment. Lesson 1 has no `pyproject.toml` or

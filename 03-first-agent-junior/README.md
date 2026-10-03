@@ -34,7 +34,7 @@ as a negative signal.
 From the repository root:
 
 ```bash
-uv run python run.py --course 3 --ticker AAPL
+uv run python run.py --ticker AAPL --lesson 3
 ```
 
 This uses the root Python environment and fetches live data, so internet

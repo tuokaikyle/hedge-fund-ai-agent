@@ -30,7 +30,7 @@ one consistent `StockSnapshot` to use.
 From the repository root:
 
 ```bash
-uv run python run.py --course 2 --ticker AAPL
+uv run python run.py --ticker AAPL --lesson 2
 ```
 
 This uses the same root Python environment as lesson 1. It needs internet

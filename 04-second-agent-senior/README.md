@@ -29,7 +29,7 @@ with ratio thresholds.
 From the repository root:
 
 ```bash
-uv run python run.py --course 4 --ticker AAPL
+uv run python run.py --ticker AAPL --lesson 4
 ```
 
 This fetches live data and needs internet access. Expected output: Junior's

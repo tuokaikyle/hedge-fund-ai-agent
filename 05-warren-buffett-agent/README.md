@@ -34,7 +34,7 @@ Those ideas are deliberately outside this lesson's small rule-based agent.
 From the repository root:
 
 ```bash
-uv run python run.py --course 5 --ticker AAPL
+uv run python run.py --ticker AAPL --lesson 5
 ```
 
 This fetches live data and needs internet access. Expected output: Junior's,

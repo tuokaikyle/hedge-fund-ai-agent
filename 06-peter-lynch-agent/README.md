@@ -39,9 +39,14 @@ growth figure does not establish how fast earnings will grow in the future.
 From the repository root:
 
 ```bash
-uv run python run.py --course 6 --ticker AAPL
+uv run python run.py --ticker AAPL --lesson 6
 ```
 
 This fetches live data and needs internet access. Expected output: Junior's,
 Senior's, Buffett's, and Lynch's signals, scores, and explanations for one
 ticker. The two investor perspectives can disagree.
+
+## Next
+
+[Lesson 7](../07-data-completeness-and-confidence/README.md) separates available data
+from confidence in each agent's decision.
