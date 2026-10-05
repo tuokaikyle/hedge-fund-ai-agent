@@ -13,13 +13,12 @@ class WarrenBuffettAgent:
         price_score, price_note = self._score_price(snapshot.trailing_pe)
 
         score = roe_score + debt_score + margin_score + price_score
-        # A strong business is a hold when the simple price check is unfavorable.
-        if score >= 70 and price_score >= 13:
+        if score >= 70:
             signal: Signal = "buy"
-        elif score < 45:
-            signal = "sell"
-        else:
+        elif score >= 45:
             signal = "hold"
+        else:
+            signal = "sell"
 
         return AnalystDecision(
             analyst="Warren Buffett",

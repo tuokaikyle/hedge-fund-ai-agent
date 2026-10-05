@@ -27,7 +27,7 @@ class SeniorAgent:
             signal=signal,
             score=score,
             data_completeness=completeness,
-            confidence=decision_confidence(score, signal, completeness),
+            confidence=decision_confidence(score, completeness),
             reasoning=" ".join((roe_note, debt_note, margin_note)),
         )
 

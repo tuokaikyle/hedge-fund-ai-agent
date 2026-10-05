@@ -9,29 +9,19 @@ class PeterLynchAgent:
         peg_score, peg_note = self._score_peg(snapshot.trailing_pe, snapshot.earnings_growth)
         earnings_score, earnings_note = self._score_earnings_growth(snapshot.earnings_growth)
 
-        debt_note = None
-        debt = snapshot.debt_to_equity
-        if debt is not None and debt > 1.0:
-            debt_note = f"Debt-to-equity is high at {debt:.2f}, which weakens the growth case."
-
         score = revenue_score + peg_score + earnings_score
-        # A buy needs a fair price-to-growth estimate and no high-debt warning.
-        if score >= 70 and peg_score >= 25 and debt_note is None:
+        if score >= 70:
             signal: Signal = "buy"
-        elif score < 45:
-            signal = "sell"
-        else:
+        elif score >= 45:
             signal = "hold"
-
-        notes = [revenue_note, peg_note, earnings_note]
-        if debt_note is not None:
-            notes.append(debt_note)
+        else:
+            signal = "sell"
 
         return AnalystDecision(
             analyst="Peter Lynch",
             signal=signal,
             score=score,
-            reasoning=" ".join(notes),
+            reasoning=" ".join((revenue_note, peg_note, earnings_note)),
         )
 
     def _score_revenue_growth(self, value: float | None) -> tuple[int, str]:

@@ -1,9 +1,9 @@
-# Lesson 8: Run the agents together
+# Lesson 8: Run the investor agents together
 
 ## Goal
 
-Move the shared fetch and agent loop into an orchestrator that returns all four
-independent decisions for one stock.
+Move the shared fetch and agent loop into an orchestrator that returns Buffett's
+and Lynch's independent decisions for one stock.
 
 ## What's here
 
@@ -16,9 +16,7 @@ independent decisions for one stock.
 ├── yfinance_service.py            # unchanged from lesson 7
 ├── agents/
 │   ├── __init__.py                # unchanged from lesson 7
-│   ├── junior.py                  # unchanged from lesson 7
 │   ├── peter_lynch.py             # unchanged from lesson 7
-│   ├── senior.py                  # unchanged from lesson 7
 │   └── warren_buffett.py          # unchanged from lesson 7
 └── utils/
     ├── __init__.py                # unchanged from lesson 7
@@ -28,11 +26,14 @@ independent decisions for one stock.
 
 ## New idea
 
+Junior and Senior taught the agent interface and scoring steps. They do not
+participate in decision making from this lesson onward. The course follows
+the two investor perspectives instead.
+
 `HedgeFundOrchestrator.run(ticker)` fetches one `StockSnapshot`, passes it to
-each agent, and collects their `AnalystDecision` objects in a
-`TickerAnalysis`. The agents still know nothing about one another. This
-lesson collects their opinions without combining them; a later lesson can
-decide how to make one final call.
+Buffett and Lynch, and collects their `AnalystDecision` objects in a
+`TickerAnalysis`. The agents still know nothing about one another. A later
+lesson can combine their calls.
 
 ## Run
 
@@ -43,6 +44,6 @@ uv run python run.py --ticker AAPL --lesson 8
 ```
 
 This fetches live data and needs internet access. Expected output: JSON with
-one `snapshot` and four entries in `analyst_decisions`, each containing its
+one `snapshot` and two entries in `analyst_decisions`, each containing its
 signal, score, data completeness, confidence, and reasoning. Values depend on
 the data Yahoo returns.

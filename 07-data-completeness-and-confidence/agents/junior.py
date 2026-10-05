@@ -35,6 +35,6 @@ class JuniorAgent:
             signal=signal,
             score=score,
             data_completeness=completeness,
-            confidence=decision_confidence(score, signal, completeness),
+            confidence=decision_confidence(score, completeness),
             reasoning=reasoning,
         )

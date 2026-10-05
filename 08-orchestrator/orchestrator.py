@@ -1,17 +1,15 @@
 """Fetch one stock snapshot and collect the agents' independent decisions."""
 
-from agents.junior import JuniorAgent
-from models import TickerAnalysis
 from agents.peter_lynch import PeterLynchAgent
-from agents.senior import SeniorAgent
 from agents.warren_buffett import WarrenBuffettAgent
+from models import TickerAnalysis
 from yfinance_service import YFinanceService
 
 
 class HedgeFundOrchestrator:
     def __init__(self) -> None:
         self.data_service = YFinanceService()
-        self.agents = (JuniorAgent(), SeniorAgent(), WarrenBuffettAgent(), PeterLynchAgent())
+        self.agents = (WarrenBuffettAgent(), PeterLynchAgent())
 
     def run(self, ticker: str) -> TickerAnalysis:
         snapshot = self.data_service.get_snapshot(ticker)

@@ -25,8 +25,8 @@ main idea and still run through `run.py`.
 | 5   | [Buffett-style agent](05-warren-buffett-agent/README.md)                          | Give one agent its own choice and weighting of metrics.                                       |
 | 6   | [Lynch-style agent](06-peter-lynch-agent/README.md)                               | Show how the same data can support a different perspective.                                   |
 | 7   | [Data Completeness and Confidence](07-data-completeness-and-confidence/README.md) | Separate available inputs from the strength of an agent's final rule-based signal.            |
-| 8   | [Run the agents together](08-orchestrator/README.md)                               | Have an orchestrator fetch once and collect independent decisions.                            |
-| 9   | Combine opinions *(planned)*                                                      | Compare a plain average with a decision weighted by data completeness and confidence.         |
+| 8   | [Run the investor agents together](08-orchestrator/README.md)                      | Have an orchestrator fetch once and collect Buffett's and Lynch's decisions.                  |
+| 9   | Combine opinions *(planned)*                                                      | Compare a plain average of the two decisions with completeness and confidence weighting.      |
 | 10  | Readable output *(planned)*                                                       | Render the collected decisions and final result as a clear report.                            |
 | 11  | First optional LLM call *(planned)*                                               | Let one agent use a model to explain its heuristic decision.                                  |
 | 12  | Structured LLM output *(planned)*                                                 | Ask for a typed response that fits the agent's output shape.                                  |
@@ -36,6 +36,14 @@ main idea and still run through `run.py`.
 | 16  | Runtime settings *(planned)*                                                      | Collect model and mode settings in one config object.                                         |
 | 17  | Configuration precedence *(planned)*                                              | Add a TOML file and explain how defaults, environment, file, and CLI values combine.          |
 | 18  | Complete report *(planned)*                                                       | Bring both agents, the final decision, completeness, confidence, and LLM status into one run. |
+
+Junior and Senior teach the agent interface and scoring steps. They do not
+participate in decision making from lesson 8 onward; Buffett and Lynch are the
+agents carried forward.
+
+All agents use the same score cutoffs for buy, hold, and sell. Buffett and Lynch
+score different metrics, but no separate rule overrides their final signal.
+This keeps later confidence and opinion combining lessons easy to trace.
 
 In lesson 7, **data completeness** measures input coverage, while
 **confidence** estimates how strongly the simple rules support the final

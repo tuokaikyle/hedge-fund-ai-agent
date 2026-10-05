@@ -22,10 +22,11 @@ style while keeping `analyze(snapshot) -> AnalystDecision`.
 ```
 
 The Buffett-style agent scores ROE (30 points), debt-to-equity (25), profit
-and operating margins (25), and trailing P/E (20). It can say `buy` only when
-the total score is at least 70 **and** its price check is fair or better.
-This makes the price of a good business part of the decision. Missing fields
-receive partial points; when every field is missing, the result is `hold`.
+and operating margins (25), and trailing P/E (20). A score of 70 or more means
+`buy`, 45–69 means `hold`, and below 45 means `sell`, as with the earlier
+agents. Price affects the score rather than overriding the final signal, so
+the decision stays easy to trace. Missing fields receive partial points;
+when every field is missing, the result is `hold`.
 
 Trailing P/E is only a simple price check. One current snapshot cannot show
 a durable competitive moat or calculate intrinsic value and margin of safety.
