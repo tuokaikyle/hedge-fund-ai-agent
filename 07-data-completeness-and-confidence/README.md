@@ -54,3 +54,8 @@ This fetches live data and needs internet access. Expected output: the same
 four signals, scores, and explanations as lesson 6, now with data
 completeness and confidence beside each score. Values depend on the data
 Yahoo returns.
+
+## Next
+
+[Lesson 8](../08-orchestrator/README.md) collects the four decisions in an
+orchestrator.
