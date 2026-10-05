@@ -11,7 +11,7 @@ The `agents/` and `utils/` folders appear only when lessons first need them.
 
 ## Course plan
 
-**This plan is subject to change.** Lessons 1–8 are built; the remaining
+**This plan is subject to change.** Lessons 1–9 are built; the remaining
 lessons are proposed. We can split, merge, or reorder them as we learn what
 makes each idea easiest to understand. Each planned lesson should add one
 main idea and still run through `run.py`.
@@ -26,7 +26,7 @@ main idea and still run through `run.py`.
 | 6   | [Lynch-style agent](06-peter-lynch-agent/README.md)                               | Show how the same data can support a different perspective.                                   |
 | 7   | [Data Completeness and Confidence](07-data-completeness-and-confidence/README.md) | Separate available inputs from the strength of an agent's final rule-based signal.            |
 | 8   | [Run the investor agents together](08-orchestrator/README.md)                      | Have an orchestrator fetch once and collect Buffett's and Lynch's decisions.                  |
-| 9   | Combine opinions *(planned)*                                                      | Compare a plain average of the two decisions with completeness and confidence weighting.      |
+| 9   | [Combine opinions](09-combine-opinions/README.md)                                  | Compare equal and confidence-weighted averages of the two decisions.                         |
 | 10  | Readable output *(planned)*                                                       | Render the collected decisions and final result as a clear report.                            |
 | 11  | First optional LLM call *(planned)*                                               | Let one agent use a model to explain its heuristic decision.                                  |
 | 12  | Structured LLM output *(planned)*                                                 | Ask for a typed response that fits the agent's output shape.                                  |
@@ -67,4 +67,5 @@ uv run python run.py --ticker AAPL --lesson 5
 uv run python run.py --ticker AAPL --lesson 6
 uv run python run.py --ticker AAPL --lesson 7
 uv run python run.py --ticker AAPL --lesson 8
+uv run python run.py --ticker AAPL --lesson 9
 ```

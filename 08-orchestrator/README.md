@@ -47,3 +47,7 @@ This fetches live data and needs internet access. Expected output: JSON with
 one `snapshot` and two entries in `analyst_decisions`, each containing its
 signal, score, data completeness, confidence, and reasoning. Values depend on
 the data Yahoo returns.
+
+## Next
+
+[Lesson 9](../09-combine-opinions/README.md) combines the two decisions.
