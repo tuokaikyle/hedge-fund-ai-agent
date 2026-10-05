@@ -11,7 +11,7 @@ The `agents/`, `utils/`, and `llm/` folders appear when lessons first need them.
 
 ## Course plan
 
-**This plan is subject to change.** Lessons 1–11 are built; the remaining
+**This plan is subject to change.** Lessons 1–12 are built; the remaining
 lessons are proposed. We can split, merge, or reorder them as we learn what
 makes each idea easiest to understand. Each planned lesson should add one
 main idea and still run through `run.py`.
@@ -29,7 +29,7 @@ main idea and still run through `run.py`.
 | 9   | [Combine opinions](09-combine-opinions/README.md)                                 | Compare equal and confidence-weighted averages of the two decisions.                     |
 | 10  | [First LLM decision](10-first-llm-call/README.md)                                 | Let Buffett return a typed model score and explanation for the orchestrator to combine.   |
 | 11  | [Shared LLM interface](11-shared-llm-interface/README.md)                         | Move model-specific code behind a small reusable interface.                              |
-| 12  | Second LLM-backed agent *(planned)*                                               | Reuse the interface for the other investor perspective.                                  |
+| 12  | [Second LLM-backed agent](12-second-llm-backed-agent/README.md)                   | Reuse the interface for the other investor perspective.                                  |
 | 13  | Runtime settings *(planned)*                                                      | Collect model settings in one config object.                                             |
 | 14  | Configuration precedence *(planned)*                                              | Add a TOML file and explain how defaults, environment, file, and CLI values combine.     |
 | 15  | Complete report *(planned)*                                                       | Render agent decisions, the final result, completeness, confidence, and model reasoning. |
@@ -50,8 +50,9 @@ Lessons 1–9 do not need an API key. The root `.env.example` can be copied to
 `.env` and filled in with `LLM_API_KEY` when starting lesson 10. Lesson 10 and
 later require that key. Lesson 10 makes one structured model call for Buffett's
 score and explanation. Lesson 11 moves that call behind a shared interface.
-Configuration comes after the model path works, so each step has a concrete
-purpose.
+Lesson 12 gives Lynch his own model-backed score and explanation through the
+same interface. Configuration comes after the model path works, so each step
+has a concrete purpose.
 
 ## Run a built lesson
 
@@ -70,6 +71,7 @@ uv run python run.py --ticker AAPL --lesson 8
 uv run python run.py --ticker AAPL --lesson 9
 uv run python run.py --ticker AAPL --lesson 10
 uv run python run.py --ticker AAPL --lesson 11
+uv run python run.py --ticker AAPL --lesson 12
 ```
 
 ## Compare the lessons
