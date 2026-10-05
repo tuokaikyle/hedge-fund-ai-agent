@@ -42,8 +42,3 @@ uv run python run.py --ticker AAPL --lesson 3
 This uses the root Python environment and fetches live data, so internet
 access is required. Expected output: Junior's signal and score for the
 requested ticker, followed by a one-line explanation based on ROE.
-
-## Next
-
-[Lesson 4](../04-second-agent-senior/README.md) combines three metrics in a
-second agent and compares its decision with Junior's.

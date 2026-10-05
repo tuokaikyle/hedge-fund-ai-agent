@@ -37,8 +37,3 @@ uv run python run.py --ticker AAPL --lesson 4
 This fetches live data and needs internet access. Expected output: Junior's
 signal, score, and ROE explanation, followed by Senior's signal, score, and
 three-metric explanation. Their calls may differ.
-
-## Next
-
-[Lesson 5](../05-warren-buffett-agent/README.md) gives an agent its first
-investor perspective and a simple price check.

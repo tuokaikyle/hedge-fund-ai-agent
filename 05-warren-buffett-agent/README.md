@@ -43,8 +43,3 @@ uv run python run.py --ticker AAPL --lesson 5
 This fetches live data and needs internet access. Expected output: Junior's,
 Senior's, and the Buffett-style agent's signal, score, and explanation for
 the same ticker. They can reach different calls.
-
-## Next
-
-[Lesson 6](../06-peter-lynch-agent/README.md) adds a second investor
-perspective that judges price relative to growth.

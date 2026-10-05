@@ -23,11 +23,10 @@ working code. Keep unchanged files unchanged so adjacent lessons are easy to
 compare.
 
 Keep each lesson README concise: state the goal, show a "What's here" file tree,
-explain the new idea, give the run command and expected output, and link to the
-next lesson when it exists. In the tree, mark code files as new, changed, or
-unchanged from the previous lesson. In code, label a new or modified function
-or class only when that helps the learner spot the change; leave unchanged
-code unmarked.
+explain the new idea, and give the run command and expected output. In the
+tree, mark code files as new, changed, or unchanged from the previous lesson.
+In code, label a new or modified function or class only when that helps the
+learner spot the change; leave unchanged code unmarked.
 
 When several agents are introduced, keep a consistent input and output shape
 so their logic is easy to compare.

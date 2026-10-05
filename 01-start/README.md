@@ -37,8 +37,3 @@ internet connection.
 
 Expected output: a JSON snapshot with the ticker you entered and the example
 company data.
-
-## Next
-
-[Lesson 2](../02-fetching-data/README.md) fetches real data and puts it into
-a `StockSnapshot`.

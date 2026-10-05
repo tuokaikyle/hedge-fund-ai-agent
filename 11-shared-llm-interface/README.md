@@ -38,8 +38,8 @@ one client and gives it to Buffett. Buffett still supplies
 rest of the decision is assembled as before.
 
 Only the client file imports `ChatOpenAI` or reads the model environment
-variables. Lynch remains rule-based in this lesson. The next lesson can give
-Lynch the same client with its own response model and prompt.
+variables. Lynch remains rule-based in this lesson; the same client can also
+serve Lynch with a different response model and prompt.
 
 ## Run
 

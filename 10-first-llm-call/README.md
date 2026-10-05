@@ -74,5 +74,3 @@ buy cutoff gives `confidence` of 57. Lynch's score and explanation still come
 entirely from rules. The `snapshot` comes from Yahoo Finance, and the
 `final_recommendation` combines the two agent scores; it is not another model
 response. Your numbers and model wording may differ from this example.
-
-Next: [Lesson 11: Shared LLM interface](../11-shared-llm-interface/README.md).

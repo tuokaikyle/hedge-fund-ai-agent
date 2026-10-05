@@ -38,8 +38,3 @@ access. The values returned by Yahoo Finance can change between runs.
 
 Expected output: a JSON snapshot with the requested ticker and the company
 fields Yahoo Finance returned.
-
-## Next
-
-[Lesson 3](../03-first-agent-junior/README.md) reads this `StockSnapshot` to
-make a simple decision from ROE.
