@@ -31,3 +31,7 @@ code unmarked.
 
 When several agents are introduced, keep a consistent input and output shape
 so their logic is easy to compare.
+
+If uv's cache is unwritable in a sandbox, set `UV_CACHE_DIR=/tmp/hedge-fund-mini-uv-cache`
+and use `uv run --no-sync` with the existing `.venv`. This does not fix Yahoo DNS
+errors; those runs need network access.

@@ -48,3 +48,5 @@ This fetches live data and needs internet access. Expected output: JSON with
 one `snapshot`, two `analyst_decisions`, and a `final_recommendation` containing
 `plain_score`, `plain_signal`, `weighted_score`, and `signal`. Values depend on
 the data Yahoo returns.
+
+Next: [Lesson 10: First LLM decision](../10-first-llm-call/README.md).
