@@ -1,6 +1,6 @@
 """Fetch a stock snapshot and ask the first agent to analyze it."""
 
-from junior import JuniorAgent
+from agents.junior import JuniorAgent
 from yfinance_service import YFinanceService
 
 

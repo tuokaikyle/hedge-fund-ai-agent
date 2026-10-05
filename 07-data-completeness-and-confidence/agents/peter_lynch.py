@@ -1,7 +1,7 @@
 """A Lynch-style analyst that compares growth with the price paid for it."""
 
-from confidence import decision_confidence
-from data_completeness import data_completeness
+from utils.confidence import decision_confidence
+from utils.data_completeness import data_completeness
 from models import AnalystDecision, Signal, StockSnapshot
 
 

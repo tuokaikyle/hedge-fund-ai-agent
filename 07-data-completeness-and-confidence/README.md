@@ -11,15 +11,19 @@ stock scores and buy/hold/sell rules from lesson 6.
 ```text
 07-data-completeness-and-confidence/
 ├── README.md
-├── confidence.py         # new: estimates strength of the final signal
-├── data_completeness.py  # new: counts available inputs
-├── junior.py             # changed: reports both measures
-├── lesson.py             # changed: prints both measures
-├── models.py             # changed: adds both fields to AnalystDecision
-├── peter_lynch.py        # changed: reports both measures
-├── senior.py             # changed: reports both measures
-├── warren_buffett.py     # changed: reports both measures
-└── yfinance_service.py   # unchanged from lesson 6
+├── lesson.py                      # changed: prints both measures
+├── models.py                      # changed: adds both fields to AnalystDecision
+├── yfinance_service.py            # unchanged from lesson 6
+├── agents/
+│   ├── __init__.py                # unchanged from lesson 6
+│   ├── junior.py                  # changed: reports both measures
+│   ├── peter_lynch.py             # changed: reports both measures
+│   ├── senior.py                  # changed: reports both measures
+│   └── warren_buffett.py          # changed: reports both measures
+└── utils/
+    ├── __init__.py                # new
+    ├── confidence.py              # new: estimates strength of the final signal
+    └── data_completeness.py       # new: counts available inputs
 ```
 
 Every agent calls `data_completeness` with the fields it expects. The helper

@@ -11,10 +11,12 @@ rule, with no LLM or investor persona.
 ```text
 03-first-agent-junior/
 ├── README.md
-├── junior.py             # new
-├── lesson.py             # changed from lesson 2
-├── models.py             # changed: adds Signal and AnalystDecision
-└── yfinance_service.py   # unchanged from lesson 2
+├── lesson.py                      # changed from lesson 2
+├── models.py                      # changed: adds Signal and AnalystDecision
+├── yfinance_service.py            # unchanged from lesson 2
+└── agents/
+    ├── __init__.py                # new
+    └── junior.py                  # new
 ```
 
 `JuniorAgent.analyze(snapshot)` returns an `AnalystDecision`: a buy, hold, or

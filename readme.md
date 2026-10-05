@@ -7,6 +7,7 @@ coordination. This is a learning project, not investment advice.
 Each lesson is a runnable folder. It carries forward the previous lesson's
 working code, and the root `run.py` runs every lesson with the same Python
 environment. Comparing adjacent folders shows what changed.
+The `agents/` and `utils/` folders appear only when lessons first need them.
 
 ## Course plan
 

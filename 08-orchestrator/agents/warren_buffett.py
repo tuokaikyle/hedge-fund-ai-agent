@@ -1,7 +1,7 @@
 """A Buffett-style analyst that checks business quality and price."""
 
-from confidence import decision_confidence
-from data_completeness import data_completeness
+from utils.confidence import decision_confidence
+from utils.data_completeness import data_completeness
 from models import AnalystDecision, Signal, StockSnapshot
 
 

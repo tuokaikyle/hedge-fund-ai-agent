@@ -1,10 +1,10 @@
 """Fetch one stock snapshot and collect the agents' independent decisions."""
 
-from junior import JuniorAgent
+from agents.junior import JuniorAgent
 from models import TickerAnalysis
-from peter_lynch import PeterLynchAgent
-from senior import SeniorAgent
-from warren_buffett import WarrenBuffettAgent
+from agents.peter_lynch import PeterLynchAgent
+from agents.senior import SeniorAgent
+from agents.warren_buffett import WarrenBuffettAgent
 from yfinance_service import YFinanceService
 
 

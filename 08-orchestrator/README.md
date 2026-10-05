@@ -10,16 +10,20 @@ independent decisions for one stock.
 ```text
 08-orchestrator/
 ├── README.md
-├── confidence.py         # unchanged from lesson 7
-├── data_completeness.py  # unchanged from lesson 7
-├── junior.py             # unchanged from lesson 7
-├── lesson.py             # changed: prints the collected result
-├── models.py             # changed: adds TickerAnalysis
-├── orchestrator.py       # new
-├── peter_lynch.py        # unchanged from lesson 7
-├── senior.py             # unchanged from lesson 7
-├── warren_buffett.py     # unchanged from lesson 7
-└── yfinance_service.py   # unchanged from lesson 7
+├── lesson.py                      # changed: prints the collected result
+├── models.py                      # changed: adds TickerAnalysis
+├── orchestrator.py                # new
+├── yfinance_service.py            # unchanged from lesson 7
+├── agents/
+│   ├── __init__.py                # unchanged from lesson 7
+│   ├── junior.py                  # unchanged from lesson 7
+│   ├── peter_lynch.py             # unchanged from lesson 7
+│   ├── senior.py                  # unchanged from lesson 7
+│   └── warren_buffett.py          # unchanged from lesson 7
+└── utils/
+    ├── __init__.py                # unchanged from lesson 7
+    ├── confidence.py              # unchanged from lesson 7
+    └── data_completeness.py       # unchanged from lesson 7
 ```
 
 ## New idea

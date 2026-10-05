@@ -11,12 +11,14 @@ style while keeping `analyze(snapshot) -> AnalystDecision`.
 ```text
 05-warren-buffett-agent/
 ├── README.md
-├── junior.py             # unchanged from lesson 4
-├── lesson.py             # changed: compares three agents
-├── models.py             # unchanged from lesson 4
-├── senior.py             # unchanged from lesson 4
-├── warren_buffett.py     # new
-└── yfinance_service.py   # changed: adds operating margin and trailing P/E
+├── lesson.py                      # changed: compares three agents
+├── models.py                      # unchanged from lesson 4
+├── yfinance_service.py            # changed: adds operating margin and trailing P/E
+└── agents/
+    ├── __init__.py                # unchanged from lesson 4
+    ├── junior.py                  # unchanged from lesson 4
+    ├── senior.py                  # unchanged from lesson 4
+    └── warren_buffett.py          # new
 ```
 
 The Buffett-style agent scores ROE (30 points), debt-to-equity (25), profit

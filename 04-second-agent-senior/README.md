@@ -11,11 +11,13 @@ return an `AnalystDecision`.
 ```text
 04-second-agent-senior/
 ├── README.md
-├── junior.py             # unchanged from lesson 3
-├── lesson.py             # changed: runs both agents
-├── models.py             # unchanged from lesson 3
-├── senior.py             # new
-└── yfinance_service.py   # changed: adds debt-to-equity and profit margin
+├── lesson.py                      # changed: runs both agents
+├── models.py                      # unchanged from lesson 3
+├── yfinance_service.py            # changed: adds debt-to-equity and profit margin
+└── agents/
+    ├── __init__.py                # unchanged from lesson 3
+    ├── junior.py                  # unchanged from lesson 3
+    └── senior.py                  # new
 ```
 
 Senior scores ROE out of 40, debt-to-equity out of 30, and profit margin out of

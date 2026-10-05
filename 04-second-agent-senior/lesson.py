@@ -1,7 +1,7 @@
 """Compare two agents' decisions for the same stock snapshot."""
 
-from junior import JuniorAgent
-from senior import SeniorAgent
+from agents.junior import JuniorAgent
+from agents.senior import SeniorAgent
 from yfinance_service import YFinanceService
 
 

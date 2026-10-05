@@ -11,13 +11,15 @@ different metrics and price rules.
 ```text
 06-peter-lynch-agent/
 ├── README.md
-├── junior.py             # unchanged from lesson 5
-├── lesson.py             # changed: compares four agents
-├── models.py             # unchanged from lesson 5
-├── peter_lynch.py        # new
-├── senior.py             # unchanged from lesson 5
-├── warren_buffett.py     # unchanged from lesson 5
-└── yfinance_service.py   # changed: adds revenue and earnings growth
+├── lesson.py                      # changed: compares four agents
+├── models.py                      # unchanged from lesson 5
+├── yfinance_service.py            # changed: adds revenue and earnings growth
+└── agents/
+    ├── __init__.py                # unchanged from lesson 5
+    ├── junior.py                  # unchanged from lesson 5
+    ├── peter_lynch.py             # new
+    ├── senior.py                  # unchanged from lesson 5
+    └── warren_buffett.py          # unchanged from lesson 5
 ```
 
 Buffett's price check uses P/E alone. Lynch asks whether growth might justify

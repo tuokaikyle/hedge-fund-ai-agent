@@ -10,9 +10,9 @@ market data using yfinance.
 ```text
 02-fetching-data/
 ├── README.md
-├── lesson.py             # changed from lesson 1
-├── models.py             # unchanged from lesson 1
-└── yfinance_service.py   # new
+├── lesson.py                      # changed from lesson 1
+├── models.py                      # unchanged from lesson 1
+└── yfinance_service.py            # new
 ```
 
 `YFinanceService` asks yfinance for a ticker's `info` dictionary and maps a
