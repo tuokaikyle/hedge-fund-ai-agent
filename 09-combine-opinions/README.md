@@ -29,8 +29,7 @@ compare equal averaging with confidence-weighted averaging.
 The orchestrator first averages the two scores equally. It then averages them
 again using each agent's confidence as its weight. Lesson 7 already caps
 confidence by data completeness, so missing inputs lower a weight without a
-second completeness multiplier. If both weights are zero, the weighted score
-uses the plain average.
+second completeness multiplier.
 
 Both scores use the familiar cutoffs: 70 or more is `buy`, 45–69 is `hold`,
 and below 45 is `sell`. `FinalRecommendation` shows the plain score and signal

@@ -7,6 +7,7 @@ from typing import Literal
 from pydantic import BaseModel, Field
 
 
+# introduced in lesson 01
 class StockSnapshot(BaseModel):
     """Company and market information in a consistent shape."""
 
@@ -32,6 +33,8 @@ class StockSnapshot(BaseModel):
 Signal = Literal["buy", "hold", "sell"]
 
 
+# introduced in lesson 03
+# modified in lesson 07
 class AnalystDecision(BaseModel):
     """One analyst's signal, score, data completeness, confidence, and explanation."""
 
@@ -43,6 +46,7 @@ class AnalystDecision(BaseModel):
     reasoning: str
 
 
+# introduced in lesson 09
 class FinalRecommendation(BaseModel):
     """Equal and confidence-weighted views of the analysts' scores."""
 
@@ -52,6 +56,8 @@ class FinalRecommendation(BaseModel):
     signal: Signal
 
 
+# introduced in lesson 08
+# modified in lesson 09
 class TickerAnalysis(BaseModel):
     """One stock snapshot, its analyst decisions, and the combined result."""
 

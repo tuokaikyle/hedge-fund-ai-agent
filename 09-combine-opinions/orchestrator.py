@@ -6,11 +6,16 @@ from models import AnalystDecision, FinalRecommendation, Signal, TickerAnalysis
 from yfinance_service import YFinanceService
 
 
+# introduced in lesson 08
+# modified in lesson 09
 class HedgeFundOrchestrator:
+    # introduced in lesson 08
     def __init__(self) -> None:
         self.data_service = YFinanceService()
         self.agents = (WarrenBuffettAgent(), PeterLynchAgent())
 
+    # introduced in lesson 08
+    # modified in lesson 09
     def run(self, ticker: str) -> TickerAnalysis:
         snapshot = self.data_service.get_snapshot(ticker)
         decisions = [agent.analyze(snapshot) for agent in self.agents]
@@ -21,18 +26,16 @@ class HedgeFundOrchestrator:
             final_recommendation=final,
         )
 
+    # introduced in lesson 09
     def _combine_decisions(self, decisions: list[AnalystDecision]) -> FinalRecommendation:
         """Compare equal and confidence-weighted averages of the two scores."""
         plain_score = round(sum(decision.score for decision in decisions) / len(decisions))
 
         total_confidence = sum(decision.confidence for decision in decisions)
-        if total_confidence:
-            weighted_score = round(
-                sum(decision.score * decision.confidence for decision in decisions)
-                / total_confidence
-            )
-        else:
-            weighted_score = plain_score
+        weighted_score = round(
+            sum(decision.score * decision.confidence for decision in decisions)
+            / total_confidence
+        )
 
         return FinalRecommendation(
             plain_score=plain_score,
@@ -41,6 +44,7 @@ class HedgeFundOrchestrator:
             signal=self._signal_from_score(weighted_score),
         )
 
+    # introduced in lesson 09
     def _signal_from_score(self, score: int) -> Signal:
         if score >= 70:
             return "buy"

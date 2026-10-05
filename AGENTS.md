@@ -7,6 +7,10 @@ Focus on the core logic. Keep it simple. It does not need to be production-ready
 or handle every error scenario. Keep test-like demonstrations out of lesson code.
 Run each lesson's documented command once, but do not test every edge case.
 
+Keep lesson code focused on the main path. Do not write code for hypothetical
+edge cases. Handle a case when it is likely to occur during the documented run
+or is essential to the lesson's core logic.
+
 This project is inspired by 3 projects: 
 /Users/kaituo/Desktop/projects/hedge-fund-mini/ai-hedge-fund-main - this is the original project
 /Users/kaituo/Desktop/projects/hedge-fund-mini/simple-hedge-fund - this is the simpler version of ai-hedge-fund-main 
