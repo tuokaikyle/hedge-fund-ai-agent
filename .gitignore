@@ -42,7 +42,6 @@ ENV/
 .env
 .env.*
 !.env.example
-config.toml
 
 # Frontend (ai-hedge-fund-main/app)
 node_modules/
