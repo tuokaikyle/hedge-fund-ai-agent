@@ -11,11 +11,8 @@ Keep lesson code focused on the main path. Do not write code for hypothetical
 edge cases. Handle a case when it is likely to occur during the documented run
 or is essential to the lesson's core logic.
 
-This project is inspired by 3 projects: 
-/Users/kaituo/Desktop/projects/hedge-fund-mini/ai-hedge-fund-main - this is the original project
-/Users/kaituo/Desktop/projects/hedge-fund-mini/simple-hedge-fund - this is the simpler version of ai-hedge-fund-main 
-/Users/kaituo/Desktop/projects/hedge-fund-mini/simple-progressive - this is a educational course based on simple-hedge-fund, but only half done.
-Refer to ai-hedge-fund-main and simple-hedge-fund if you need to make big decisions or plans. 
+This project is inspired by ai-hedge-fund-main. refer to it if you need to make big decisions or plans. 
+simple-progressive is an unfinished project also in the format of educational course. 
 
 Each lesson should contain the code it needs and run through the root `run.py`
 with the shared environment. Build on the previous lesson and copy forward
