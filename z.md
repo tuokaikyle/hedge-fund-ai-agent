@@ -13,3 +13,6 @@ clear key: what is rule based, what is llm based
 note confuses llm
 
 lesson 13 - 15 are not about llm
+
+confident important? 
+avoid the users to feel side tracted by non-ai-agent content, and get frustrated by changing the way of writing something again and again

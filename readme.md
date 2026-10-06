@@ -6,8 +6,10 @@ Inspired by [ai-hedge-fund](https://github.com/virattt/ai-hedge-fund), this proj
 - is a mini educational course
 - shows how a small agent system is built
 - aims for a gentle learning curve
-- shows the core logic only and deliberately keep it simple
+- shows the core logic only and deliberately keeps it simple
 - does not try to be super robust or production-ready
+- prevents users from being distracted by content unrelated to the AI agent
+- spares users the frustration of code that is repeatedly refactored
 
 
 This project is for educational and research purposes only. It does not give real investment advice.
