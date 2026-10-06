@@ -18,6 +18,12 @@ Each lesson is a runnable folder. It carries forward the previous lesson's
 working code, and the root `run.py` runs every lesson with the same Python
 environment. 
 
+## Branches
+
+- **`v0.3`** has 9 lessons and aims to provide a gentle learning curve.
+- **`v0.2`** has 15 lessons, with a more gradual learning curve than `v0.3`
+  and slightly more content.
+
 ## Course plan
 
 **This plan is subject to change.** 
