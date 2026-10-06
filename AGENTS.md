@@ -21,9 +21,14 @@ compare.
 
 Keep each lesson README concise: state the goal, show a "What's here" file tree,
 explain the new idea, and give the run command and expected output. In the
-tree, mark code files as new, changed, or unchanged from the previous lesson.
-In code, label a new or modified function or class only when that helps the
-learner spot the change; leave unchanged code unmarked.
+tree, mark code files that are new or changed from the previous lesson, and
+leave unchanged files without a note. In code, mark a function or class that is new in an existing file, or changed
+after it was introduced, with one comment line listing every lesson that
+touched it, such as `# changed in lesson 3, 6`. Append the current lesson
+number each time a lesson changes it, and leave other code unmarked. Do not
+mark a file that is entirely new in its lesson, and do not mark `lesson.py`;
+the README tree already shows both. Renumbering lessons means regenerating
+these labels.
 
 When several agents are introduced, keep a consistent input and output shape
 so their logic is easy to compare.

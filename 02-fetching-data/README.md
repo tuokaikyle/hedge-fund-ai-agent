@@ -11,19 +11,23 @@ market data using yfinance.
 02-fetching-data/
 ├── README.md
 ├── lesson.py                      # changed from lesson 1
-├── models.py                      # unchanged from lesson 1
+├── models.py
 └── yfinance_service.py            # new
 ```
 
-`YFinanceService` asks yfinance for a ticker's `info` dictionary and maps a
-few keys into the snapshot: company name, sector, current price, market cap,
-and return on equity. The other snapshot fields remain empty for now. The
-printed JSON omits fields set to `None` so the fetched values are easy to see.
+`YFinanceService` asks yfinance for a ticker's `info` dictionary and maps its
+keys into the snapshot. It fills every field the later agents will read:
+company name, sector, price, market cap, return on equity, debt-to-equity,
+profit and operating margins, trailing P/E, and revenue and earnings growth.
+This is the only version of the service in the course, so later lessons never
+change it. Yahoo reports debt-to-equity as a percentage, so the service divides
+it by 100 to match the other ratios. The printed JSON omits fields set to
+`None` so the fetched values are easy to see.
 
 ## Why use a service
 
-Keeping the yfinance field names in `yfinance_service.py` gives later code
-one consistent `StockSnapshot` to use.
+Keeping the yfinance field names in `yfinance_service.py` gives every agent
+one consistent `StockSnapshot` to use, and no agent needs to know about Yahoo.
 
 ## Run
 
