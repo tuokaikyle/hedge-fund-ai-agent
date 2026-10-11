@@ -73,6 +73,7 @@ outputs/
 # control. prompts.md is the spec; these are regenerable from it.
 # Anchored with a leading slash so only these top-level directories match.
 /ai-hedge-fund-main/
+/ai-hedge-fund-v2/
 /simple-hedge-fund/
 /ai-hedge-fund-cl/
 /simple-progressive/

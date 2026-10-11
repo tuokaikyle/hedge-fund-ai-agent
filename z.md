@@ -45,4 +45,7 @@ agent reasoning
 adding another agent easily
 
 
-05 and 08 can be combined
+do not add some code in lesson, and remove these code in lesson n+1
+lessson 13 看不懂
+research should not be in agents directory
+大环境的数据能不能加进去
